@@ -1,12 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react"
+import { createRoot } from 'react-dom/client';
+//component file
+import TodoContainer from "./components/TodoContainer"
 
-// component file
-import TodoContainer from './components/TodoContainer';
+//stylesheet
+import "./App.css"
 
-ReactDOM.render(
-  <React.StrictMode>
-    <TodoContainer />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<TodoContainer />);
