@@ -19,7 +19,7 @@ const Header = () => {
           textAlign: 'center',
         }}
       >
-        todos
+        To Do List
       </h1>
     </header>
   );
